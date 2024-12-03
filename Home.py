@@ -23,4 +23,14 @@ st.image("Destiny.jpg")
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "General Analysis", "Advanced Analysis"])
 
+# Load the selected page
+if page == "Home":
+    home_page_path = Path("pages/Home.py")  # Make sure 'H' is capitalized to match the file name
+    exec(home_page_path.read_text())
+elif page == "General Analysis":
+    general_page_path = Path("pages/General Analysis.py")
+    exec(general_page_path.read_text())
+elif page == "Advanced Analysis":
+    advanced_page_path = Path("pages/Advanced Analysis.py")
+    exec(advanced_page_path.read_text())
 
