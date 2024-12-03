@@ -23,10 +23,4 @@ st.image("Destiny.jpg")
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "General Analysis", "Advanced Analysis"])
 
-# Load the selected page
-if page == "Home":
-    display_home_page()
-elif page == "General Analysis":
-    display_general_analysis_page()
-elif page == "Advanced Analysis":
-    display_advanced_analysis_page()
+
